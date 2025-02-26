@@ -5,3 +5,4 @@
 3. Classification Example - Credit Card Fraud
 4. Multilayer Perceptron
 5. Binary classification problem - HR dataset
+6. Multi classification problems and general training functions
