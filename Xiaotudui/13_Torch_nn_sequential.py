@@ -25,8 +25,8 @@ class Model(nn.Module):
         x = self.max_pool3(x)
         x = self.flatten(x)
         x = self.linear1(x)
-        logic = self.linear2(x)
-        return logic
+        logits = self.linear2(x)
+        return logits
 
 
 class ModelSeq(nn.Module):
@@ -45,8 +45,8 @@ class ModelSeq(nn.Module):
         )
 
     def forward(self, x):
-        logic = self.model1(x)
-        return logic
+        logits = self.model1(x)
+        return logits
 
 
 model = Model()
