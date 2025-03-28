@@ -1,7 +1,6 @@
-import torch
 import torchvision
 from torch import nn
-from torch.nn import Conv2d
+from torch.nn import MaxPool2d
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 
@@ -10,29 +9,37 @@ dataset = torchvision.datasets.CIFAR10("./dataset", train=False, transform=torch
 dataloader = DataLoader(dataset, batch_size=64)
 
 
+# input = torch.tensor([[1, 2, 0, 3, 1],
+#                       [0, 1, 2, 3, 1],
+#                       [1, 2, 1, 0, 0],
+#                       [5, 2, 3, 1, 1],
+#                       [2, 1, 0, 1, 1]])
+#
+# input = torch.reshape(input, (-1, 1, 5, 5))
+# print(input.shape)
+# print(input.dtype)
+
+
 class Model(nn.Module):
     def __init__(self):
         super(Model, self).__init__()
-        self.conv = Conv2d(in_channels=3, out_channels=6, kernel_size=3, stride=1, padding=0)
+        self.max_pool = MaxPool2d(kernel_size=3, ceil_mode=True)
 
     def forward(self, input):
-        output = self.conv(input)
+        output = self.max_pool(input)
         return output
 
 
 model = Model()
-writer = SummaryWriter("logs")
+# output = model(input)
+# print(output)
 
+writer = SummaryWriter("logs")
 step = 0
 for data in dataloader:
     imgs, targets = data
-    output = model(imgs)
-    print(imgs.shape)
-    print(output.shape)
-    # torch.Size([64, 3, 32, 32])
     writer.add_images("input", imgs, step)
-    # torch.Size([64, 6, 30, 30]) -> [xxx, 3, 30, 30]
-    output = torch.reshape(output, (-1, 3, 30, 30))
+    output = model(imgs)
     writer.add_images("output", output, step)
     step = step + 1
 
