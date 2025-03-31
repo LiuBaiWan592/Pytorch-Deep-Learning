@@ -1,10 +1,4 @@
-import torchvision
 from torch import nn
-from torch.utils.data import DataLoader
-
-dataset = torchvision.datasets.CIFAR10("./dataset", train=False, transform=torchvision.transforms.ToTensor(),
-                                       download=True)
-dataloader = DataLoader(dataset, batch_size=64)
 
 
 class CIFAR10Model(nn.Module):
