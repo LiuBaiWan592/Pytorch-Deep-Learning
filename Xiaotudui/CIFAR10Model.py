@@ -1,3 +1,4 @@
+import torch
 from torch import nn
 
 
@@ -19,3 +20,13 @@ class CIFAR10Model(nn.Module):
     def forward(self, x):
         logits = self.model1(x)
         return logits
+
+
+# ≤‚ ‘ƒ£–Õ
+if __name__ == '__main__':
+    model = CIFAR10Model()
+    print(model)
+    input = torch.ones(64, 3, 32, 32)
+    output = model(input)
+    print(output)
+    print(output.shape)
