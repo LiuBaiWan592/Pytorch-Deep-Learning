@@ -5,10 +5,10 @@ from torch import nn
 vgg16 = torchvision.models.vgg16(weights=None)
 
 # 模型保存方式1：保存网络模型的结构和参数
-torch.save(vgg16, 'vgg16_method1.pth')
+torch.save(vgg16, 'model/vgg16_method1.pth')
 
 # 模型保存方式2：保存网络模型的参数为字典（官方推荐）
-torch.save(vgg16.state_dict(), 'vgg16_method2.pth')
+torch.save(vgg16.state_dict(), 'model/vgg16_method2.pth')
 
 
 # 陷阱1
@@ -23,4 +23,4 @@ class MyModel(nn.Module):
 
 
 my_model = MyModel()
-torch.save(my_model.state_dict(), 'my_model_method1.pth')
+torch.save(my_model.state_dict(), 'model/my_model_method1.pth')
