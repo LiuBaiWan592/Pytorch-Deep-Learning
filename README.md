@@ -1,5 +1,20 @@
 # Pytorch Deep Learning
 
+## d2l-zh
+
+**1. Dive Into Deep Learning**
+
+*My own notes for the book Dive Into Deep Learning.*
+
+**2. pytorch**
+
+*The code examples in the book are implemented in PyTorch.*
+
+**3. d2l-zh-pytorch.pdf:** *The Chinese version of Dive Into Deep Learning, with PyTorch code examples.*
+
+***
+***
+
 ## RiYueGuangHua
 
 1. Beginner's Example - Linear Regression Model
@@ -10,6 +25,12 @@
 6. Multi classification problems and general training functions
 7. Handwritten digit classification and fully connected model
 
+***
+***
+
 ## Xiaotudui
+
 **Pycharm Project**
 
+***
+***
