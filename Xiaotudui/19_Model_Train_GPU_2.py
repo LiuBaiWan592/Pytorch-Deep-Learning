@@ -1,3 +1,5 @@
+import time
+
 import torch
 import torchvision
 from torch import nn
@@ -5,7 +7,6 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 
 import CIFAR10Model
-import time
 
 # 定义训练的设备
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -31,7 +32,6 @@ model = CIFAR10Model.CIFAR10Model().to(device)
 # 损失函数
 loss_fn = nn.CrossEntropyLoss().to(device)
 
-
 # 优化器
 # learning_rate = 0.01
 # 1e-2 = 1 x 10^-2 = 0.01
@@ -44,7 +44,7 @@ total_train_step = 0
 # 记录测试次数
 total_test_step = 0
 # 训练轮数
-epochs = 10
+epochs = 50
 
 # 添加 TensorBoard
 writer = SummaryWriter("logs")

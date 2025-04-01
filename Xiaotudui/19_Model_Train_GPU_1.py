@@ -1,3 +1,5 @@
+import time
+
 import torch
 import torchvision
 from torch import nn
@@ -5,7 +7,7 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 
 import CIFAR10Model
-import time
+
 # 准备数据集
 train_dataset = torchvision.datasets.CIFAR10("./dataset", train=True, transform=torchvision.transforms.ToTensor(),
                                              download=True)
