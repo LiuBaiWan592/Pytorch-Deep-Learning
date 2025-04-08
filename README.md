@@ -24,6 +24,7 @@
 5. Binary classification problem and multilayer perceptron
 6. Multi classification problems and general training functions
 7. Handwritten digit classification and fully connected model
+8. Practice - Fashion MNIST
 
 ***
 ***
