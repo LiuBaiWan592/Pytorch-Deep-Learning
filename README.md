@@ -26,6 +26,7 @@
 7. Handwritten digit classification and fully connected model
 8. Practice - Fashion MINST and fully connected model
 9. Handwritten digit classification and Convolutional Neural Networks
+10. Weather classification and convolutional neural networks
 
 ***
 ***
