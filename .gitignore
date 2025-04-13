@@ -3,3 +3,4 @@ logs
 dataset
 __pycache__
 *.pth
+.ipynb_checkpoints
