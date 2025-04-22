@@ -22,7 +22,7 @@ class CIFAR10Model(nn.Module):
         return logits
 
 
-# ²âÊÔÄ£ÐÍ
+# æµ‹è¯•æ¨¡åž‹
 if __name__ == '__main__':
     model = CIFAR10Model()
     print(model)
