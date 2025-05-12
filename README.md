@@ -32,6 +32,9 @@
 13. Pre trained network RESNET101
 14. Preservation of models and their weights
 15. The second method of image input - customize Class Dataset
+16. Residual Network (ResNet)
+17. Inception module
+18. Dense Network (DenseNet)
 
 ***
 ***
