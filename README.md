@@ -35,6 +35,7 @@
 16. Residual Network (ResNet)
 17. Inception module
 18. Dense Network (DenseNet)
+19. Image localization and segmentation
 
 ***
 ***
