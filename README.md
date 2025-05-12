@@ -27,6 +27,9 @@
 8. Practice - Fashion MINST and fully connected model
 9. Handwritten digit classification and Convolutional Neural Networks
 10. Weather classification and convolutional neural networks
+11. Pre trained network VGG16
+12. Pre trained network RESNET18
+13. Pre trained network RESNET101
 
 ***
 ***
