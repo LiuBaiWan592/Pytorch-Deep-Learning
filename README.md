@@ -30,6 +30,8 @@
 11. Pre trained network VGG16
 12. Pre trained network RESNET18
 13. Pre trained network RESNET101
+14. Preservation of models and their weights
+15. The second method of image input - customize Class Dataset
 
 ***
 ***
