@@ -6,3 +6,5 @@ dataset
 __pycache__
 *.pth
 .ipynb_checkpoints
+.data
+.vector_cache
