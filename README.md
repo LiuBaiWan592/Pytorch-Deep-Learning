@@ -17,6 +17,22 @@
 
 ## RiYueGuangHua
 
+### Dictionary Structure
+
+```
+RiYueGuangHua/
+├── dataset/
+|
+├── env/
+|
+├── imgs/
+|
+├── logs/
+|
+├── model/
+|
+├── NLP/
+```
 1. Beginner's Example - Linear Regression Model
 2. Tensors and Data Types
 3. Classification Example - Credit Card Fraud
@@ -36,6 +52,18 @@
 17. Inception module
 18. Dense Network (DenseNet)
 19. Image localization and segmentation
+20. UNET Image Semantic Segmentation
+21. LinkNet Image Semantic Segmentation
+22. Text Representation
+23. Simple Text Classification
+24. RNN Text Classification
+25. LSTM GRU Cell Text Classification
+26. LSTM GRU Text Classification
+27. Text Classification Example - English Comment Emotion Prediction
+28. Text Classification Example - Chinese Evaluation Emotion Prediction
+29. Transformer Encode Text Classification
+30. Sequence Prediction Example - Beijing Air Pollution Prediction
+31. Tensorboard Visualization
 
 ***
 ***
