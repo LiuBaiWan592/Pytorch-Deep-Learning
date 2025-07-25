@@ -70,7 +70,20 @@ RiYueGuangHua/
 
 ## Xiaotudui
 
+### Dictionary Structure
+
+```
+Xiaotudui/
+├── dataset/
+|
+├── images/
+|
+├── logs/
+|
+├── model/
+```
 **Pycharm Project From Xiaotudui**
+
 
 ***
 ***
